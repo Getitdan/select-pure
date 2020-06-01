@@ -213,6 +213,7 @@ class SelectPure {
       const selectedLabel = new Element("span", {
         class: this._config.classNames.selectedLabel,
         textContent: _option.label,
+        value: _option.value,
       });
       const icon = new Element(this._config.inlineIcon ?
         this._config.inlineIcon.cloneNode(true) : "i", {
